@@ -42,7 +42,7 @@ function setupLoginCopy() {
   if (!ON_PAGES) return;
   document.getElementById("login-title").textContent = "GitHub token";
   document.getElementById("login-help").innerHTML =
-    'Live site pe upload GitHub token se hota hai. <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Craftland%20Assets" target="_blank" rel="noreferrer">Yahan token banao</a> (public_repo tick), copy karke neeche paste karo.';
+    'Uploads on the live site use a GitHub token. <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Craftland%20Assets" target="_blank" rel="noreferrer">Create a token</a> (enable public_repo), copy it, and paste it below.';
   document.getElementById("key-label-text").textContent = "Token";
 }
 
@@ -132,7 +132,7 @@ uploadForm.addEventListener("submit", async (event) => {
     uploadForm.reset();
     uploadMsg.className = "ok";
     uploadMsg.textContent = ON_PAGES
-      ? "Published. Website 1–2 minute me update hogi."
+      ? "Published. The website will update in 1–2 minutes."
       : "Package published.";
     loadList();
   } catch (err) {

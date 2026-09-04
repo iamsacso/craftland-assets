@@ -82,11 +82,12 @@ a {
 }
 
 .brand-mark {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  background: conic-gradient(from 210deg, var(--ember), var(--gold), #6b2a08);
-  box-shadow: 0 0 0 1px #ffd7a033, 0 8px 18px #ff6a1a33;
+  object-fit: cover;
+  background: #000;
+  display: block;
 }
 
 .brand-text {
