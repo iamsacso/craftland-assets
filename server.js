@@ -33,6 +33,7 @@ const CATEGORIES = [
 ];
 
 const FILE_EXT = new Set([
+  ".package",
   ".zip",
   ".rar",
   ".7z",
