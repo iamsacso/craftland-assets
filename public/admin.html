@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload — Craftland Assets</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Craftland Assets</strong>
+          <small>Admin upload</small>
+        </span>
+      </a>
+      <a class="btn btn-ghost" href="/">Library</a>
+    </header>
+
+    <main class="admin-main">
+      <section id="login-card" class="panel">
+        <h1>Admin key</h1>
+        <p class="muted">
+          Only you can publish packages. Default key is
+          <code>craftland</code> — change it in <code>.env</code>.
+        </p>
+        <form id="login-form" class="stack">
+          <label>
+            Key
+            <input type="password" id="admin-key" required />
+          </label>
+          <button class="btn btn-primary" type="submit">Continue</button>
+          <p id="login-error" class="error" hidden></p>
+        </form>
+      </section>
+
+      <section id="studio" class="admin-layout" hidden>
+        <form id="upload-form" class="panel stack">
+          <h1>New package</h1>
+          <p class="muted">
+            Export a Craftland asset package, then upload it into the right
+            section.
+          </p>
+          <label>
+            Name
+            <input type="text" name="name" maxlength="80" required placeholder="Desert crate model" />
+          </label>
+          <label>
+            Section
+            <select name="category" required>
+              <option value="model">Model</option>
+              <option value="eca-script">ECA Script</option>
+              <option value="ui">UI</option>
+              <option value="sound">Sound</option>
+              <option value="particle-emitter">Particle Emitter</option>
+              <option value="others">Others</option>
+            </select>
+          </label>
+          <label>
+            Description
+            <textarea name="description" rows="3" maxlength="400" placeholder="What it is and how to use it in Craftland."></textarea>
+          </label>
+          <label>
+            Package file
+            <input type="file" name="package" required />
+          </label>
+          <label>
+            Preview image (optional)
+            <input type="file" name="thumb" accept="image/png,image/jpeg,image/webp" />
+          </label>
+          <button class="btn btn-primary" type="submit">Publish package</button>
+          <p id="upload-msg" class="muted" hidden></p>
+        </form>
+
+        <div class="panel">
+          <div class="toolbar">
+            <h2>Published</h2>
+            <button class="btn btn-ghost" id="logout" type="button">Log out</button>
+          </div>
+          <div id="admin-list" class="admin-list"></div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/admin.js"></script>
+  </body>
+</html>
