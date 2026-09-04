@@ -193,6 +193,11 @@ h2 {
   color: var(--muted);
 }
 
+.muted a {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
 .lede {
   max-width: 52ch;
   font-size: 1.05rem;

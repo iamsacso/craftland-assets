@@ -28,14 +28,14 @@
 
     <main class="admin-main">
       <section id="login-card" class="panel">
-        <h1>Admin key</h1>
-        <p class="muted">
+        <h1 id="login-title">Admin key</h1>
+        <p id="login-help" class="muted">
           Only you can publish packages. Default key is
           <code>craftland</code> — change it in <code>.env</code>.
         </p>
         <form id="login-form" class="stack">
           <label>
-            Key
+            <span id="key-label-text">Key</span>
             <input type="password" id="admin-key" required />
           </label>
           <button class="btn btn-primary" type="submit">Continue</button>
@@ -90,6 +90,7 @@
         </div>
       </section>
     </main>
+    <script src="js/github.js"></script>
     <script src="js/admin.js"></script>
   </body>
 </html>
