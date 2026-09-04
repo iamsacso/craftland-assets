@@ -1,17 +1,5 @@
 [
   {
-    "id": "1cf62c25-760d-4ac5-bed5-9c83e41b666c",
-    "name": "test",
-    "category": "ui",
-    "description": "asd",
-    "originalName": "pass ui (1).package",
-    "storedName": "1788515587851-90425bc3.package",
-    "size": 13205,
-    "thumbName": "1788515587851-5e4d15b6.png",
-    "downloads": 0,
-    "createdAt": "2026-09-04T09:53:07.851Z"
-  },
-  {
     "id": "aada5b10-46f3-466c-8aec-b0d1728d3a0a",
     "name": "Particles",
     "category": "particle-emitter",
