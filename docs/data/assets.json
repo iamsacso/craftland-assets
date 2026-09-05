@@ -1,5 +1,17 @@
 [
   {
+    "id": "e5b213de-f4e3-4438-8f70-a925008eedc6",
+    "name": "Bench",
+    "category": "model",
+    "description": "You can sit and sleep in this bench",
+    "originalName": "Sitting Chair.package",
+    "storedName": "1788585820941-5ba737e8.package",
+    "size": 38256,
+    "thumbName": "1788585820941-2b6973f2.png",
+    "downloads": 0,
+    "createdAt": "2026-09-05T05:23:40.941Z"
+  },
+  {
     "id": "94693aed-f847-460a-9fc0-55c6221770f2",
     "name": "Sitting Chair",
     "category": "others",
