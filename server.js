@@ -27,6 +27,7 @@ const CATEGORIES = [
   "model",
   "characters",
   "custom-object",
+  "skybox",
   "eca-script",
   "ui",
   "sound",

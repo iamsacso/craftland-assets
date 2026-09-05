@@ -2,6 +2,7 @@ const LABELS = {
   model: "Model",
   characters: "Characters",
   "custom-object": "Custom Object",
+  skybox: "Skybox",
   "eca-script": "ECA Script",
   ui: "UI",
   sound: "Sound",
