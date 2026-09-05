@@ -1,6 +1,8 @@
 const CATEGORIES = [
   { id: "all", label: "All", hint: "Every pack", icon: "◆" },
   { id: "model", label: "Model", hint: "3D objects", icon: "▣" },
+  { id: "characters", label: "Characters", hint: "Avatars & NPCs", icon: "♟" },
+  { id: "custom-object", label: "Custom Object", hint: "Map props", icon: "⬡" },
   { id: "eca-script", label: "ECA Script", hint: "Logic packs", icon: "⌘" },
   { id: "ui", label: "UI", hint: "Menus & HUD", icon: "▦" },
   { id: "sound", label: "Sound", hint: "Audio packs", icon: "♫" },
@@ -10,6 +12,8 @@ const CATEGORIES = [
 
 const LABELS = {
   model: "Model",
+  characters: "Characters",
+  "custom-object": "Custom Object",
   "eca-script": "ECA Script",
   ui: "UI",
   sound: "Sound",
@@ -100,11 +104,12 @@ async function loadAssets() {
 
   gridEl.innerHTML = assets
     .map((item) => {
-      const thumb = item.thumbName
+      const hasThumb = Boolean(item.thumbName);
+      const thumb = hasThumb
         ? `<img src="${thumbSrc(item)}" alt="">`
         : item.name.slice(0, 1).toUpperCase();
       return `
-        <article class="card">
+        <article class="card${hasThumb ? " has-thumb" : ""}">
           <div class="thumb">${thumb}</div>
           <div class="card-body">
             <span class="tag">${LABELS[item.category] || item.category}</span>

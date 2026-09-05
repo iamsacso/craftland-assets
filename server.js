@@ -25,6 +25,8 @@ loadEnv();
 
 const CATEGORIES = [
   "model",
+  "characters",
+  "custom-object",
   "eca-script",
   "ui",
   "sound",

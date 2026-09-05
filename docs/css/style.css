@@ -207,7 +207,7 @@ h2 {
 
 .cats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 10px;
   margin: 28px 0 22px;
 }
@@ -271,11 +271,14 @@ h2 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 280px;
+  min-height: 320px;
+  box-shadow: var(--shadow);
 }
 
 .thumb {
-  height: 140px;
+  position: relative;
+  height: 180px;
+  flex: 0 0 180px;
   background: #0e1117
     linear-gradient(135deg, #ff6a1a22, transparent 50%),
     repeating-linear-gradient(90deg, #ffffff08 0 1px, transparent 1px 22px);
@@ -283,7 +286,9 @@ h2 {
   place-items: center;
   color: var(--gold);
   font-family: Syne, sans-serif;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  overflow: hidden;
 }
 
 .thumb img {
@@ -292,12 +297,24 @@ h2 {
   object-fit: cover;
 }
 
+.card.has-thumb .thumb::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 42px;
+  background: linear-gradient(180deg, transparent, var(--panel));
+  pointer-events: none;
+}
+
 .card-body {
+  position: relative;
+  z-index: 1;
   padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
+  background: var(--panel);
 }
 
 .tag {
