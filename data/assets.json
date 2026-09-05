@@ -1,5 +1,17 @@
 [
   {
+    "id": "c1460c54-828e-4c3f-a01d-e70194308dfe",
+    "name": "Bench",
+    "category": "custom-object",
+    "description": "You can sit and sleep in this bench",
+    "originalName": "Bench.package",
+    "storedName": "1788585915845-b50f6f02.package",
+    "size": 38256,
+    "thumbName": "1788585915845-e1359eac.png",
+    "downloads": 0,
+    "createdAt": "2026-09-05T05:25:15.845Z"
+  },
+  {
     "id": "e5b213de-f4e3-4438-8f70-a925008eedc6",
     "name": "Bench",
     "category": "model",
