@@ -1,5 +1,17 @@
 [
   {
+    "id": "dafcff67-f0a6-4935-911a-d62598fec928",
+    "name": "Oggy Jack Olly",
+    "category": "characters",
+    "description": "You can play as Oggy Jack or Olly",
+    "originalName": "Oggy_Jack_Olly.package",
+    "storedName": "1788587771554-aa63b699.package",
+    "size": 1913885,
+    "thumbName": "1788587771554-4a8dd76e.png",
+    "downloads": 0,
+    "createdAt": "2026-09-05T05:56:11.554Z"
+  },
+  {
     "id": "c1460c54-828e-4c3f-a01d-e70194308dfe",
     "name": "Bench",
     "category": "custom-object",
