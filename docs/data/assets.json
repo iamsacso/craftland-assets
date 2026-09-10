@@ -1,5 +1,16 @@
 [
   {
+    "id": "2a3f01f4-c063-4f3b-813b-ca25bf2d8b35",
+    "name": "Default Male Rig",
+    "category": "characters",
+    "description": "Freefire Male Character with Rig",
+    "originalName": "Male_UGC_Cos_Artist_Rig (1).FBX",
+    "storedName": "1789025863031-29abb258.fbx",
+    "size": 838800,
+    "thumbName": "1789025863031-c207d3b9.jpg",
+    "createdAt": "2026-09-10T07:37:43.031Z"
+  },
+  {
     "id": "76467ba3-b84d-419b-a25e-584399760153",
     "name": "30+ Particle Emitter like Rain, Ember, etc",
     "category": "particle-emitter",
