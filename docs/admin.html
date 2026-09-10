@@ -47,8 +47,8 @@
         <form id="upload-form" class="panel stack">
           <h1>New package</h1>
           <p class="muted">
-            Export a Craftland asset package, then upload it into the right
-            section.
+            Upload a Craftland package, or a model (FBX), audio, image, or
+            other allowed file, then pick the right section.
           </p>
           <label>
             Name
@@ -74,7 +74,12 @@
           </label>
           <label>
             Package file
-            <input type="file" name="package" accept=".package,.zip,.rar,.7z,.pak" required />
+            <input
+              type="file"
+              name="package"
+              accept=".package,.zip,.rar,.7z,.pak,.fbx,.obj,.gltf,.glb,.mp3,.wav,.ogg,.png,.jpg,.jpeg,.webp,.json,.lua,.txt"
+              required
+            />
           </label>
           <label>
             Preview image (optional)

@@ -169,7 +169,6 @@ async function publishToGitHub() {
     storedName,
     size: pack.size,
     thumbName,
-    downloads: 0,
     createdAt: new Date().toISOString(),
   };
 

@@ -169,8 +169,6 @@ app.get("/api/download/:id", (req, res) => {
   if (!fs.existsSync(filePath)) {
     return res.status(404).json({ error: "File missing on server." });
   }
-  item.downloads = (item.downloads || 0) + 1;
-  writeAssets(assets);
   res.download(filePath, item.originalName || item.storedName);
 });
 
@@ -225,7 +223,6 @@ app.post(
       storedName: pack.filename,
       size: pack.size,
       thumbName: thumb ? thumb.filename : "",
-      downloads: 0,
       createdAt: new Date().toISOString(),
     };
 

@@ -119,7 +119,6 @@ async function loadAssets() {
             <p>${escapeHtml(item.description || "Craftland studio package.")}</p>
             <div class="meta">
               <span>${formatSize(item.size)}</span>
-              <span>${item.downloads || 0} downloads</span>
             </div>
             <a class="btn btn-primary" href="${downloadHref(item)}" download="${escapeHtml(item.originalName || item.name)}">Download</a>
           </div>
